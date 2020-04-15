@@ -1,0 +1,11 @@
+Notes
+
+1. One part generates a new deck with params or random
+2. displays card in one container
+3. sidebar keeps table of info:  True Cout, Cards Left.
+---------
+"dealer" component is god.  holds state, api
+  passes down card selection to cardContainer
+  passes down cardcount to 'record keeper' component
+CardContainer keeps cards
+cards are the actual card itself...that component this will change to 'hand' so we can later add more blackjacky things
