@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Button from 'react-bootstrap/Button';
 import Card from './Card';
 import DeckCardInfo from './DeckCardInfo';
 import axios from 'axios';
@@ -41,7 +42,7 @@ class ShowCard extends Component{
   render(){
     return(
       <div>
-        <button onClick={this.handleClick}>Show Card</button>
+        <Button variant='primary' onClick={this.handleClick}>Show Card</Button>
         <h3>{this.props.deckId}</h3>
         <Card src={this.state.cardImg}/>
         <DeckCardInfo

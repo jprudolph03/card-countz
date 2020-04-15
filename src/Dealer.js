@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 import ShowCard from './ShowCard';
 import axios from 'axios';
 
+import Container from 'react-bootstrap/Container'
+
 class Dealer extends Component{
   constructor(props){
     super(props);
@@ -38,7 +40,9 @@ class Dealer extends Component{
   render(){
     return(
       <div>
-        <ShowCard deckId={this.state.deckId} />
+        <Container>
+          <ShowCard deckId={this.state.deckId} />
+        </Container>
       </div>
     )
   }
